@@ -1,0 +1,25 @@
+
+/* Class = "UIButton"; configuration.title = "Falcon"; ObjectID = "1a0-ER-TfE"; */
+"1a0-ER-TfE.configuration.title" = "Falcon";
+
+
+/* Class = "UILabel"; text = "Please select your spaceship name"; ObjectID = "FpA-H5-F3Y"; */
+"FpA-H5-F3Y.text" = "Uzay geminizin ismini seçiniz";
+
+/* Class = "UILabel"; text = "Access Denied"; ObjectID = "NDV-tR-bfc"; */
+"NDV-tR-bfc.text" = "Giriş Engellendi";
+
+/* Class = "UIButton"; configuration.title = "RUN!"; ObjectID = "SXc-cm-XkQ"; */
+"SXc-cm-XkQ.configuration.title" = "KAÇ!";
+
+
+
+/* Class = "UILabel"; text = "ENTER THE PLANET!"; ObjectID = "TPP-9a-Sal"; */
+"TPP-9a-Sal.text" = "GEZEGENE GİR!";
+
+/* Class = "UIButton"; configuration.title = "TIE Fighter"; ObjectID = "jPq-he-9L0"; */
+"jPq-he-9L0.configuration.title" = "TIE Fighter";
+
+
+/* Class = "UIButton"; configuration.title = "X-Wing"; ObjectID = "oai-UK-9AZ"; */
+"oai-UK-9AZ.configuration.title" = "X-Wing";
