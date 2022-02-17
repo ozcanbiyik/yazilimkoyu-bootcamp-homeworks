@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aBT-1C-Fzr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Canlı yardım-->
+        <scene sceneID="2zP-Zc-vXd">
+            <objects>
+                <viewController id="Izp-P6-gMi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTn-Sr-ZYp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hTI-fv-FfL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Canlı yardım" image="message" catalog="system" id="XIU-rH-dkp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Czc-mg-C0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="-782"/>
+        </scene>
+        <!--Ana sayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework006" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hepsiexpress" translatesAutoresizingMaskIntoConstraints="NO" id="eDz-ai-Ob9">
+                                <rect key="frame" x="10" y="54" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="egP-PQ-LFQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="p6P-h7-lYb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rt-UU-uqC">
+                                <rect key="frame" x="10" y="164" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jyr-UP-kfS"/>
+                                    <constraint firstAttribute="width" constant="100" id="WOx-lw-Cii"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Market">
+                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4T-ia-ZTt">
+                                <rect key="frame" x="120" y="164" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="T6o-CG-pKU"/>
+                                    <constraint firstAttribute="height" constant="30" id="kIG-wX-w7c"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yemek">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9b-jH-gaG">
+                                <rect key="frame" x="230" y="164" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l6S-3r-vRj"/>
+                                    <constraint firstAttribute="width" constant="100" id="mPN-BJ-Z2I"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Çiçek">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jGv-eE-2EV">
+                                <rect key="frame" x="0.0" y="194" width="414" height="619"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FVP-oM-OQD">
+                                    <size key="itemSize" width="155" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kategoriHucre" id="c5f-ub-6aC" customClass="CollectionViewHucre" customModule="Homework006" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rgw-0e-gGr">
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ev-yasam-ve-bahce" translatesAutoresizingMaskIntoConstraints="NO" id="yU1-ej-be1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="140"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yU1-ej-be1" secondAttribute="trailing" id="54b-px-HTZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="yU1-ej-be1" secondAttribute="bottom" id="AKa-b8-jhh"/>
+                                                <constraint firstItem="yU1-ej-be1" firstAttribute="top" secondItem="Rgw-0e-gGr" secondAttribute="top" id="Ulh-R6-juS"/>
+                                                <constraint firstItem="yU1-ej-be1" firstAttribute="leading" secondItem="Rgw-0e-gGr" secondAttribute="leading" id="g7S-ez-JIQ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="hucreImage" destination="yU1-ej-be1" id="Jbt-LC-OyO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CR4-oA-J1d">
+                                <rect key="frame" x="341" y="104" width="33" height="30"/>
+                                <menu key="menu" title="Adres" id="8jH-pm-THj">
+                                    <children>
+                                        <command title="Evim" id="jZE-y2-dUN"/>
+                                        <command title="Evim İstanbul" id="LEO-ZJ-LJ9"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teslimat Adresi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgs-uS-PC2">
+                                <rect key="frame" x="275" y="87" width="99" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eDz-ai-Ob9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2dd-SK-gjw"/>
+                            <constraint firstItem="9Rt-UU-uqC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2md-vT-mEA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CR4-oA-J1d" secondAttribute="trailing" constant="40" id="BTb-bU-sjU"/>
+                            <constraint firstItem="jGv-eE-2EV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PwA-t8-PY6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jGv-eE-2EV" secondAttribute="trailing" id="Xhc-lp-K8B"/>
+                            <constraint firstItem="CR4-oA-J1d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Yo5-um-Swl"/>
+                            <constraint firstItem="eDz-ai-Ob9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="cwO-io-9vZ"/>
+                            <constraint firstItem="W9b-jH-gaG" firstAttribute="top" secondItem="eDz-ai-Ob9" secondAttribute="bottom" constant="10" id="fU1-ia-VdL"/>
+                            <constraint firstItem="9Rt-UU-uqC" firstAttribute="top" secondItem="eDz-ai-Ob9" secondAttribute="bottom" constant="10" id="hDZ-gR-FX0"/>
+                            <constraint firstItem="m4T-ia-ZTt" firstAttribute="leading" secondItem="9Rt-UU-uqC" secondAttribute="trailing" constant="10" id="jEi-t8-4Fh"/>
+                            <constraint firstItem="CR4-oA-J1d" firstAttribute="top" secondItem="xgs-uS-PC2" secondAttribute="bottom" id="jH8-sE-C5r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xgs-uS-PC2" secondAttribute="trailing" constant="40" id="neZ-Lh-Tig"/>
+                            <constraint firstItem="jGv-eE-2EV" firstAttribute="top" secondItem="9Rt-UU-uqC" secondAttribute="bottom" id="tJQ-fz-6hY"/>
+                            <constraint firstItem="W9b-jH-gaG" firstAttribute="leading" secondItem="m4T-ia-ZTt" secondAttribute="trailing" constant="10" id="vdF-2z-aZS"/>
+                            <constraint firstItem="m4T-ia-ZTt" firstAttribute="top" secondItem="eDz-ai-Ob9" secondAttribute="bottom" constant="10" id="vuF-dm-rYG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jGv-eE-2EV" secondAttribute="bottom" id="wz3-6A-NhC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ana sayfa" image="x-button" id="3pL-PF-ytG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="kategoriCollectionView" destination="jGv-eE-2EV" id="GD5-Zd-xGo"/>
+                        <outlet property="marketButton" destination="9Rt-UU-uqC" id="7Nl-7I-4Tb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="225"/>
+        </scene>
+        <!--Sepetim-->
+        <scene sceneID="gdq-M8-Icb">
+            <objects>
+                <viewController id="Gtq-Me-mse" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8a6-or-z5b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UOY-yh-RDT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sepetim" image="cart" catalog="system" id="c8V-59-CTs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFd-cm-7ax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35" y="1041"/>
+        </scene>
+        <!--Siparişlerim-->
+        <scene sceneID="F4f-Ra-cwI">
+            <objects>
+                <viewController id="kpm-tc-ZGP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b0W-hM-ogS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gbb-Ay-uBA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Siparişlerim" image="bag" catalog="system" selectedImage="bag" id="zlz-Ks-7Kh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bz9-6m-cKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="84"/>
+        </scene>
+        <!--Hepsiburada-->
+        <scene sceneID="UPs-7M-TdJ">
+            <objects>
+                <viewController id="3eQ-A2-02G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8z9-QS-Qid">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tl1-bb-zDb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hepsiburada" image="hepsiburada" id="Mcp-4d-mzx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eD-w9-4zu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903" y="83"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OFZ-M1-eYA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aBT-1C-Fzr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2nn-Gy-C9k">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="da8-jP-oVe"/>
+                        <segue destination="kpm-tc-ZGP" kind="relationship" relationship="viewControllers" id="mRC-MO-6OI"/>
+                        <segue destination="Gtq-Me-mse" kind="relationship" relationship="viewControllers" id="6st-Ad-bto"/>
+                        <segue destination="Izp-P6-gMi" kind="relationship" relationship="viewControllers" id="6IB-cY-Bfq"/>
+                        <segue destination="3eQ-A2-02G" kind="relationship" relationship="viewControllers" id="Gu2-VI-hie"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGW-AO-9FH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510" y="-806"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="ev-yasam-ve-bahce" width="155" height="140"/>
+        <image name="hepsiburada" width="25" height="25"/>
+        <image name="hepsiexpress" width="197" height="119"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="x-button" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ezs-b0-plu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yapılacaklar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework007" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Z6c-zl-mgP">
+                                <rect key="frame" x="0.0" y="148" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kwG-uT-Gvt">
+                                <rect key="frame" x="0.0" y="199" width="414" height="663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yapilacakHucre" id="IHz-GK-dLj" customClass="TableViewYapilacak" customModule="Homework007" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IHz-GK-dLj" id="TLJ-zd-Xay">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-m4-TJY">
+                                                    <rect key="frame" x="177.5" y="7" width="59" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZLg-m4-TJY" firstAttribute="centerX" secondItem="TLJ-zd-Xay" secondAttribute="centerX" id="4xn-vu-9G2"/>
+                                                <constraint firstItem="ZLg-m4-TJY" firstAttribute="centerY" secondItem="TLJ-zd-Xay" secondAttribute="centerY" id="709-Eo-XoJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="yapilacakBilgiLabel" destination="ZLg-m4-TJY" id="7OP-IY-eXF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kwG-uT-Gvt" secondAttribute="bottom" id="2Nd-fo-KyE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kwG-uT-Gvt" secondAttribute="trailing" id="Alo-za-rDc"/>
+                            <constraint firstItem="Z6c-zl-mgP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GbS-d0-cZJ"/>
+                            <constraint firstItem="kwG-uT-Gvt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KmA-mc-dWy"/>
+                            <constraint firstItem="Z6c-zl-mgP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sgi-kx-DdU"/>
+                            <constraint firstItem="Z6c-zl-mgP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sis-in-M91"/>
+                            <constraint firstItem="kwG-uT-Gvt" firstAttribute="top" secondItem="Z6c-zl-mgP" secondAttribute="bottom" id="hic-L5-tja"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yapılacaklar" id="aci-Vg-e2a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5vw-ip-C7P">
+                            <connections>
+                                <segue destination="nev-LO-8mI" kind="show" id="Ocf-3i-ck7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="Z6c-zl-mgP" id="PZM-QG-oiM"/>
+                        <outlet property="yapilacakTableView" destination="kwG-uT-Gvt" id="S9V-wT-Dg9"/>
+                        <segue destination="Ubc-M1-HZf" kind="show" identifier="toDetay" id="8lb-AC-Qr0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Yapılacak İş Detay-->
+        <scene sceneID="D8R-gK-NyR">
+            <objects>
+                <viewController id="Ubc-M1-HZf" customClass="YapilacakDetayVC" customModule="Homework007" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cS2-hy-rvd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İş Detay" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ers-pU-RfH">
+                                <rect key="frame" x="100" y="298" width="214" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wo-1D-L7W">
+                                <rect key="frame" x="127.5" y="437" width="159" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GÜNCELLE" subtitle="">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonGuncelle:" destination="Ubc-M1-HZf" eventType="touchUpInside" id="Z72-2Q-S5M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G8I-yI-gDu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2wo-1D-L7W" firstAttribute="top" secondItem="Ers-pU-RfH" secondAttribute="bottom" constant="50" id="5wE-i3-F1A"/>
+                            <constraint firstItem="2wo-1D-L7W" firstAttribute="centerX" secondItem="cS2-hy-rvd" secondAttribute="centerX" id="aJB-xh-qaC"/>
+                            <constraint firstItem="G8I-yI-gDu" firstAttribute="trailing" secondItem="Ers-pU-RfH" secondAttribute="trailing" constant="100" id="dj3-DA-IEO"/>
+                            <constraint firstItem="Ers-pU-RfH" firstAttribute="top" secondItem="G8I-yI-gDu" secondAttribute="top" constant="150" id="esv-uG-ajR"/>
+                            <constraint firstItem="Ers-pU-RfH" firstAttribute="leading" secondItem="G8I-yI-gDu" secondAttribute="leading" constant="100" id="ez0-q5-0uK"/>
+                            <constraint firstItem="G8I-yI-gDu" firstAttribute="bottom" secondItem="Ers-pU-RfH" secondAttribute="bottom" constant="475" id="gWy-OW-WCz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yapılacak İş Detay" id="UOy-iS-vd2"/>
+                    <connections>
+                        <outlet property="tfYapilacakIs" destination="Ers-pU-RfH" id="VJU-eu-eK4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwE-xa-vaq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1974" y="551"/>
+        </scene>
+        <!--Yapılacak İş Kayıt-->
+        <scene sceneID="6Qf-B9-ZCW">
+            <objects>
+                <viewController id="nev-LO-8mI" customClass="YapilacakKayitVC" customModule="Homework007" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fmb-hG-M4d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yapılacak İş" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04L-fN-SYD">
+                                <rect key="frame" x="100" y="298" width="214" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1En-Sl-swO">
+                                <rect key="frame" x="163" y="437" width="88" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="EKLE">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonEkle:" destination="nev-LO-8mI" eventType="touchUpInside" id="Ogf-Pg-3cC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UId-54-YKO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="04L-fN-SYD" firstAttribute="leading" secondItem="UId-54-YKO" secondAttribute="leading" constant="100" id="Dhd-3I-KA3"/>
+                            <constraint firstItem="1En-Sl-swO" firstAttribute="centerX" secondItem="fmb-hG-M4d" secondAttribute="centerX" id="EU5-OA-w7z"/>
+                            <constraint firstItem="UId-54-YKO" firstAttribute="bottom" secondItem="04L-fN-SYD" secondAttribute="bottom" constant="475" id="Rbs-U4-f7v"/>
+                            <constraint firstItem="UId-54-YKO" firstAttribute="trailing" secondItem="04L-fN-SYD" secondAttribute="trailing" constant="100" id="Vx4-pu-ng7"/>
+                            <constraint firstItem="1En-Sl-swO" firstAttribute="top" secondItem="04L-fN-SYD" secondAttribute="bottom" constant="50" id="si5-Q7-kG8"/>
+                            <constraint firstItem="04L-fN-SYD" firstAttribute="top" secondItem="UId-54-YKO" secondAttribute="top" constant="150" id="upH-34-naQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yapılacak İş Kayıt" id="WIr-vw-2cD"/>
+                    <connections>
+                        <outlet property="tfYapilacakIs" destination="04L-fN-SYD" id="zjW-vS-1yf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLa-nP-JDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1974" y="-169"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xf0-jO-aZ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ezs-b0-plu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="KZe-i5-RGb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Pw-g3-gaq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4E-co-8W3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
