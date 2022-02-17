@@ -1,1 +1,0 @@
-# yazilimkoyu-bootcamp-homeworks
